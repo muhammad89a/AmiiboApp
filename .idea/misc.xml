@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-land/amiibos_details_fragment.xml" value="0.14276315789473684" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/amiibos_details_fragment.xml" value="0.13355263157894737" />
+        <entry key="app/src/main/res/layout/amiibos_grid_fragment.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/amiibos_item_list.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/list_country_options_menu.xml" value="0.18651315789473685" />
+        <entry key="app/src/main/res/menu/list_options_menu.xml" value="0.335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

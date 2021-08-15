@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    android:label="main_fragment"
+    app:startDestination="@id/amiibosGridFragment">
+
+    <fragment
+        android:id="@+id/amiibosGridFragment"
+        android:name="com.muhammad89a.amiiboapp.ui.fragments.AmiibosGrid.AmiibosGridFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/amiibos_grid_fragment">
+
+        <action
+            android:id="@+id/action_amiibosGridFragment_to_amiibosDetailsFragment"
+            app:destination="@id/amiibosDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/amiibosDetailsFragment"
+        android:name="com.muhammad89a.amiiboapp.ui.fragments.AmiibosDetails.AmiibosDetailsFragment"
+        android:label="detail_fragment"
+        tools:layout="@layout/amiibos_details_fragment">
+
+        <argument
+            android:name="selectedAmiibo"
+            app:argType="com.muhammad89a.amiiboapp.data.model.AmiiboDTO"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_amiibosDetailsFragment_pop_including_amiibosGridFragment"
+            app:popUpTo="@id/amiibosGridFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

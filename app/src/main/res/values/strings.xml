@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AmiiboApp</string>
+    <string name="content_description_media">content description media</string>
+    <string name="not_found">Not Found</string>
+    <string name="filter">filter</string>
+    <string name="purchase">Purchase</string>
+    <string name="unPurchase">UnPurchase</string>
+</resources>

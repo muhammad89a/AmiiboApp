@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_item_height"
+    android:layout_margin="8dp">
+
+
+
+    <ImageView
+        android:id="@+id/imageListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_700"
+        android:transitionName="imageTransitionName"
+        android:contentDescription="@string/content_description_media"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars" />
+
+
+    <ImageView
+        android:id="@+id/cartListItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_cart_ic"
+        android:visibility="gone"
+        android:background="@color/black"
+        app:tint="#FFC107" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#2000"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/nameListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="@tools:sample/first_names" />
+
+        <TextView
+            android:id="@+id/amiiboSeriesListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="@tools:sample/last_names" />
+
+        <TextView
+            android:id="@+id/gameSeriesListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="@tools:sample/cities" />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
